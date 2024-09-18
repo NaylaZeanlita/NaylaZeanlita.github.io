@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Order Restoran</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="logo-resto.jpeg" alt="Logo Restoran" class="logo">
+            <h1>STRUK</h1>
+            <p>Alam Segar 3, Jl. Perjuangan, Sempaja Selatan Kec. Samarinda Utara, Samarinda, 75119</p>
+            <h1>----------------------------------------------------------</h1>
+        </header>
+
+        <form id="orderForm">
+            <div class="order-details">
+                <div class="detail-row">
+                    <div class="detail-item">
+                        <label for="waiterName">Cashier:</label>
+                        <input type="text" id="waiterName" value="Fauzan" readonly>
+                    </div>
+                    <div class="detail-item">
+                        <label for="orderDate">Date:</label>
+                        <input type="date" id="orderDate" required>
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-item">
+                        <label for="customerName">Customer:</label>
+                        <input type="text" id="customerName" value="Azzam" readonly>
+                    </div>
+                    <div class="detail-item">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" value="Jl. Merdeka No.15, Kota Balikpapan" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Order</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="nasi-goreng.jpeg" alt="Nasi Goreng Spesial">
+                            <span>Nasi Goreng Spesial</span>
+                        </td>
+                        <td><input type="number" value="2" min="0" data-price="25000"></td>
+                        <td>Rp 25.000</td>
+                        <td class="item-total">Rp 25.000</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="es-teh-manis.jpeg" alt="Es Teh Manis">
+                            <span>Es Teh Manis</span>
+                        </td>
+                        <td><input type="number" value="2" min="0" data-price="5000"></td>
+                        <td>Rp 5.000</td>
+                        <td class="item-total">Rp 10.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-section">
+                <div class="total-row">
+                    <span>Total Price</span>
+                    <span id="subtotal">Rp 35.000</span>
+                </div>
+                <div class="total-row">
+                    <span>Tax (10%)</span>
+                    <span id="tax">Rp 3.500</span>
+                </div>
+                <div class="total-row total-final">
+                    <span>Total</span>
+                    <span id="total">Rp 38.500</span>
+                </div>
+            </div>
+
+            <div class="payment-method">
+                <h3>Metode Pembayaran:</h3>
+                <div class="payment-options">
+                    <label><input type="radio" name="payment" value="bca" required> <img class="payment-logo"
+                            src="bca.png"></label>
+                    <label><input type="radio" name="payment" value="bri"><img class="payment-logo"
+                            src="bri.png"></label>
+                    <label><input type="radio" name="payment" value="ovo"><img class="payment-logo"
+                            src="ovo.png"></label>
+                    <label><input type="radio" name="payment" value="gopay"><img class="payment-logo"
+                            src="gopay.png"></label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Proses Pesanan</button>
+        </form>
+
+        <footer>
+            <p>Nama: Nayla Zeanlita Putri Nur'ain</p>
+            <p>NIM: 2309106052</p>
+            <p>Praktikum Web: <a
+                    href="https://classroom.google.com/c/NzEwMjM1MTUyNDc0/a/NzA2MTI4OTQyNjky/details">Posttest 2</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
