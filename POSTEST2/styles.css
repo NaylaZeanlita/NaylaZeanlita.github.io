@@ -14,12 +14,13 @@ body {
 }
 
 .container {
-    max-width: 500px;
-    margin-left: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
     background-color: var(--background-color);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
 }
 
 header {
@@ -194,42 +195,77 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+    /* Mengurangi padding dan margin pada container */
     .container {
-        padding: 20px;
+        padding: 10px;
     }
 
+    /* Menyusun ulang detail-row menjadi kolom */
     .detail-row {
         flex-direction: column;
+        gap: 10px;
     }
 
+    /* Mengurangi ukuran font pada heading */
+    h1 {
+        font-size: 2em;
+    }
+
+    /* Mengurangi ukuran logo */
+    .logo {
+        max-width: 150px;
+    }
+
+    /* Memastikan tabel tidak berantakan di layar kecil */
     .order-table,
     .order-table tbody,
     .order-table tr,
     .order-table td {
         display: block;
-    }
-
-    .order-table thead {
-        display: none;
+        width: 100%;
     }
 
     .order-table td {
+        padding: 10px;
         text-align: right;
-        padding-left: 50%;
-        position: relative;
     }
 
     .order-table td::before {
         content: attr(data-label);
         position: absolute;
         left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
         font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .order-table td:nth-child(1) {
+        padding-left: 0;
+    }
+
+    .order-table img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 60px;
+    }
+
+    .payment-logo {
+        max-width: 50px;
     }
 
     .payment-options {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 0.8em;
     }
 }
