@@ -14,7 +14,7 @@
             <img src="logo-resto.jpeg" alt="Logo Restoran" class="logo">
             <h1>STRUK</h1>
             <p>Alam Segar 3, Jl. Perjuangan, Sempaja Selatan Kec. Samarinda Utara, Samarinda, 75119</p>
-            <h1>----------------------------------------------------------</h1>
+            <h1>-------------------------------------</h1>
         </header>
 
         <form id="orderForm">
@@ -56,7 +56,7 @@
                             <img src="nasi-goreng.jpeg" alt="Nasi Goreng Spesial">
                             <span>Nasi Goreng Spesial</span>
                         </td>
-                        <td><input type="number" value="2" min="0" data-price="25000"></td>
+                        <td><input type="number" value="2" min="0" data-price="50000"></td>
                         <td>Rp 25.000</td>
                         <td class="item-total">Rp 25.000</td>
                     </tr>
@@ -71,37 +71,36 @@
                     </tr>
                 </tbody>
             </table>
-
-            <div class="total-section">
-                <div class="total-row">
-                    <span>Total Price</span>
-                    <span id="subtotal">Rp 35.000</span>
-                </div>
-                <div class="total-row">
-                    <span>Tax (10%)</span>
-                    <span id="tax">Rp 3.500</span>
-                </div>
-                <div class="total-row total-final">
-                    <span>Total</span>
-                    <span id="total">Rp 38.500</span>
-                </div>
+    </div>
+    <div class="container">
+        <div class="total-section">
+            <div class="total-row">
+                <span>Total Price</span>
+                <span id="subtotal">Rp 60.000</span>
             </div>
-
-            <div class="payment-method">
-                <h3>Metode Pembayaran:</h3>
-                <div class="payment-options">
-                    <label><input type="radio" name="payment" value="bca" required> <img class="payment-logo"
-                            src="bca.png"></label>
-                    <label><input type="radio" name="payment" value="bri"><img class="payment-logo"
-                            src="bri.png"></label>
-                    <label><input type="radio" name="payment" value="ovo"><img class="payment-logo"
-                            src="ovo.png"></label>
-                    <label><input type="radio" name="payment" value="gopay"><img class="payment-logo"
-                            src="gopay.png"></label>
-                </div>
+            <div class="total-row">
+                <span>Tax (10%)</span>
+                <span id="tax">Rp 6.000</span>
             </div>
+            <div class="total-row total-final">
+                <span>Total</span>
+                <span id="total">Rp 66.000</span>
+            </div>
+        </div>
 
-            <button type="submit" class="submit-btn">Proses Pesanan</button>
+        <div class="payment-method">
+            <h3>Metode Pembayaran:</h3>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="bca" required> <img class="payment-logo"
+                        src="bca.png"></label>
+                <label><input type="radio" name="payment" value="bri"><img class="payment-logo" src="bri.png"></label>
+                <label><input type="radio" name="payment" value="ovo"><img class="payment-logo" src="ovo.png"></label>
+                <label><input type="radio" name="payment" value="gopay"><img class="payment-logo"
+                        src="gopay.png"></label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Proses Pesanan</button>
         </form>
 
         <footer>
