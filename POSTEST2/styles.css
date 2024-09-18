@@ -219,13 +219,12 @@ footer {
     .order-table td {
         display: block;
         width: 100%;
-        overflow-x: auto;
     }
 
     .order-table td {
         padding: 10px;
         text-align: left;
-        display: block;
+        display: flex;
         position: relative;
     }
 
